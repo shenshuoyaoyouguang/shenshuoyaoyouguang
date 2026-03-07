@@ -46,8 +46,12 @@
 ## GitHub 数据
 
 <p align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=shenshuoyaoyouguang&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub stats" />
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=shenshuoyaoyouguang&layout=compact&theme=tokyonight&hide_border=true" alt="Top langs" />
+  <img width="49%" src="./images/profile-stats.svg" alt="GitHub Overview" />
+  <img width="49%" src="./images/top-languages.svg" alt="Top Languages" />
+</p>
+
+<p align="center">
+  以上统计图由仓库内 GitHub Actions 定时生成，避免依赖公共图床服务。
 </p>
 
 <p align="center">

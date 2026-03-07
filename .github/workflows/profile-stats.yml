@@ -1,0 +1,42 @@
+name: Generate Profile Stats
+
+on:
+  schedule:
+    - cron: "15 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate overview stats card
+        uses: cicirello/user-statistician@v1
+        with:
+          image-file: images/profile-stats.svg
+          custom-title: GitHub Overview
+          colors: dark-dimmed
+          category-order: repositories, contributions
+          commit-and-push: false
+          commit-message: "chore: refresh profile stats"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate top languages card
+        uses: cicirello/user-statistician@v1
+        with:
+          image-file: images/top-languages.svg
+          custom-title: Top Languages
+          colors: dark-dimmed
+          category-order: languages
+          max-languages: 8
+          commit-message: "chore: refresh profile stats"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -23,9 +23,8 @@ jobs:
           image-file: images/profile-stats.svg
           custom-title: GitHub Overview
           colors: dark-dimmed
-          category-order: repositories, contributions
+          hide-keys: languages
           commit-and-push: false
-          commit-message: "chore: refresh profile stats"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -37,6 +36,18 @@ jobs:
           colors: dark-dimmed
           category-order: languages
           max-languages: 8
-          commit-message: "chore: refresh profile stats"
+          commit-and-push: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit generated stats
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- images/profile-stats.svg images/top-languages.svg; then
+            echo "No image updates to commit."
+            exit 0
+          fi
+          git add images/profile-stats.svg images/top-languages.svg
+          git commit -m "chore: refresh profile stats"
+          git push

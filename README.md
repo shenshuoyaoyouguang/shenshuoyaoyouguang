@@ -1,11 +1,5 @@
-<h1 align="center">你好，我是初见 👋</h1>
-
 <p align="center">
-  专注于 <strong>AI Agent</strong>、<strong>CLI 自动化</strong> 与 <strong>多模型 API 封装</strong>
-</p>
-
-<p align="center">
-  我在做的事情很简单：把复杂的 AI 工具链，变成更容易接入、调用和交付的产品能力。
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1f6feb,100:0d1117&height=220&section=header&text=shenshuoyaoyouguang&fontSize=38&fontColor=f0f6fc&desc=AI%20Agent%20·%20CLI%20工具%20·%20API%20封装&descSize=16&descAlign=50&descAlignY=70&animation=fadeIn" />
 </p>
 
 <p align="center">
@@ -16,32 +10,11 @@
 
 ---
 
-## 我在做什么
+## 技术栈
 
-- **统一 AI 接入层**：把 Gemini CLI、ChatGPT Codex、Claude Code、Qwen Code 等能力封装成兼容 API，降低接入和二次集成成本。
-- **开发者效率工具**：围绕 Claude Code / Codex CLI 打磨配置管理、协作和自动化体验。
-- **可复用工作流**：把个人实验沉淀为开源项目，让复杂能力更容易复制、部署和扩展。
-
-## 代表项目
-
-### [CLIProxyAPI](https://github.com/shenshuoyaoyouguang/CLIProxyAPI)
-将 Gemini CLI、Antigravity、ChatGPT Codex、Claude Code、Qwen Code、iFlow 等能力封装为兼容 OpenAI / Gemini / Claude / Codex 的 API 服务，适合快速接入、测试和产品化。
-
-**技术栈：** `Go`
-
-### [cc-use](https://github.com/shenshuoyaoyouguang/cc-use)
-面向 Claude Code / Codex CLI 的桌面配置管理工具，帮助开发者更稳定地管理本地环境与使用体验。
-
-**技术栈：** `TypeScript`
-
-### [oh-my-claudecode](https://github.com/shenshuoyaoyouguang/oh-my-claudecode)
-面向团队协作的多代理编排方案，目标是提升复杂任务的拆解、执行和汇总效率。
-
-**技术栈：** `TypeScript`
-
-## 关注方向
-
-`AI Agents` `Automation` `TypeScript` `Go` `Node.js` `Python` `Developer Tools`
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=go,ts,nodejs,python,git,docker,linux&theme=dark" />
+</p>
 
 ## GitHub 数据
 
@@ -62,10 +35,6 @@
   </picture>
 </p>
 
-## 合作方向
-
-- AI Agent 工具链
-- CLI 到 API 的产品化封装
-- 开发者效率与自动化工作流
-
-如果你也在做相关方向，欢迎通过仓库 Issue 或项目页面交流。
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1f6feb,100:0d1117&height=120&section=footer" />
+</p>

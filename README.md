@@ -4,7 +4,6 @@
 
 <p align="center">
   <a href="https://github.com/shenshuoyaoyouguang/CLIProxyAPI">CLIProxyAPI</a> ·
-  <a href="https://github.com/shenshuoyaoyouguang/cc-use">cc-use</a> ·
   <a href="https://github.com/shenshuoyaoyouguang/oh-my-claudecode">oh-my-claudecode</a>
 </p>
 
@@ -19,8 +18,8 @@
 ## GitHub 数据
 
 <p align="center">
-  <img width="49%" src="./images/profile-stats.svg" alt="GitHub Overview" />
-  <img width="49%" src="./images/top-languages.svg" alt="Top Languages" />
+  <img width="48%" height="320" src="./images/profile-stats.svg" alt="GitHub Overview" />
+  <img width="48%" height="320" src="./images/top-languages.svg" alt="Top Languages" />
 </p>
 
 <p align="center">

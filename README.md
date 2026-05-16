@@ -18,8 +18,7 @@
 ## GitHub 数据
 
 <p align="center">
-  <img width="48%" height="320" src="./images/profile-stats.svg" alt="GitHub Overview" />
-  <img width="48%" height="320" src="./images/top-languages.svg" alt="Top Languages" />
+  <img src="./images/github-stats.svg" alt="GitHub Stats" />
 </p>
 
 <p align="center">

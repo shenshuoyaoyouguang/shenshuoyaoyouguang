@@ -3,8 +3,23 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/shenshuoyaoyouguang/CLIProxyAPI">CLIProxyAPI</a> ·
-  <a href="https://github.com/shenshuoyaoyouguang/oh-my-claudecode">oh-my-claudecode</a>
+  <strong>AI toolchain tinkerer</strong> · CLI / API gateway / reverse engineering<br/>
+  日常折腾 AI 工具链，专注 CLI、API 网关与逆向方向的小工具
+</p>
+
+<!--
+  Featured Projects —— 有拿得出手的项目时，取消注释并填写
+  (fill in when you have projects worth showing)
+
+## Featured Projects
+
+| Project | Description | Stack |
+| --- | --- | --- |
+| [project-name](https://github.com/shenshuoyaoyouguang/project-name) | English one-liner · 中文一句话 | Tauri · Rust |
+-->
+
+<p align="center">
+  <sub>Daily drivers（常用生态工具）：<a href="https://github.com/shenshuoyaoyouguang/CLIProxyAPI">CLIProxyAPI</a> · <a href="https://github.com/shenshuoyaoyouguang/oh-my-claudecode">oh-my-claudecode</a></sub>
 </p>
 
 ---
@@ -32,6 +47,17 @@
     <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/shenshuoyaoyouguang/shenshuoyaoyouguang/output/github-contribution-grid-snake-dark.svg">
   </picture>
 </p>
+
+<!--
+  Contact / Social —— 填上联系方式后取消注释
+  (uncomment and fill in your contact info)
+
+<p align="center">
+  <a href="mailto:you@example.com">📧 Email</a> ·
+  <a href="https://x.com/your-handle">𝕏</a> ·
+  <a href="https://your.blog">📝 Blog</a>
+</p>
+-->
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1f6feb,100:0d1117&height=120&section=footer" />

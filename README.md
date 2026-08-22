@@ -11,7 +11,7 @@
   Featured Projects —— 有拿得出手的项目时，取消注释并填写
   (fill in when you have projects worth showing)
 
-## Featured Projects
+## Featured Projects · 精选项目
 
 | Project | Description | Stack |
 | --- | --- | --- |

@@ -40,26 +40,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Run combine script tests
+        run: node --test scripts/combine-stats.test.mjs
+
       - name: Combine stats into single SVG
-        run: |
-          node -e "
-          const fs = require('fs');
-          const stats = fs.readFileSync('images/profile-stats.svg', 'utf8');
-          const langs = fs.readFileSync('images/top-languages.svg', 'utf8');
-          const targetH = 400;
-          const statsScale = targetH / 480;
-          const langsScale = targetH / 291;
-          const statsW = Math.round(447 * statsScale);
-          const langsW = Math.round(410 * langsScale);
-          const gap = 20;
-          const totalW = statsW + gap + langsW;
-          const stripSvg = s => s.replace(/<svg[^>]*>/, '').replace(/<\/svg>$/, '');
-          const combined = '<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"' + totalW + '\" height=\"' + targetH + '\" viewBox=\"0 0 ' + totalW + ' ' + targetH + '\">' +
-            '<svg x=\"0\" y=\"0\" width=\"' + statsW + '\" height=\"' + targetH + '\" viewBox=\"0 0 447 480\">' + stripSvg(stats) + '</svg>' +
-            '<svg x=\"' + (statsW + gap) + '\" y=\"0\" width=\"' + langsW + '\" height=\"' + targetH + '\" viewBox=\"0 0 410 291\">' + stripSvg(langs) + '</svg>' +
-            '</svg>';
-          fs.writeFileSync('images/github-stats.svg', combined);
-          "
+        run: node scripts/combine-stats.mjs images/profile-stats.svg images/top-languages.svg images/github-stats.svg
 
       - name: Commit generated stats
         run: |
